@@ -1,1 +1,2 @@
-# Semhal
+# Softwre Enginerring 
+Blogging Service
