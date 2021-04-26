@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create new comment</title>
+</head>
+<body>
+<div align="center">
+    <h1> Create New Comment</h1> <br/>
+    <form action="#" th:action="@{/mypost/savecomment}" th:object="${comment}" method="post">
+        <table border="0" cellpadding="10">
+            <tr>
+                <td> Post ID: </td>
+                <td><input type="text" th:field="*{postId}" readonly="readonly"> </td>
+            </tr>
+            <tr>
+                <td> Content: </td>
+                <td><textarea  rows = "20" cols = "80" th:field = "*{text}" ></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td colspan="2"><button type="submit"> Save</button> </td>
+            </tr>
+        </table>
+    </form>
+
+</div>
+
+</body>
+</html>

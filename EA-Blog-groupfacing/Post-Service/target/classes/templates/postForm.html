@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/">
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Post Form</title>
+<link href="css/main.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" th:href="@{/css/main.css}" href="../css/main.css" />
+</head>
+<body>
+	<div id="global">
+		<form action="#" th:action="@{/posts/add}" th:object="${post}"method="post">
+			<p>
+				<label for="id"><span data-th-text="#{post.text}">Post</span></label>
+				<input type="text" id="id" th:field="*{text}" />
+	         </p>
+	         
+			
+			</form>
+	</div>
+
+</body>
+</html>
