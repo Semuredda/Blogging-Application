@@ -1,2 +1,2 @@
-# Softwre Enginerring 
-Blogging Service
+# Software Enginerring (SWE)
+Blogging Application
